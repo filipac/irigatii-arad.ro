@@ -26,6 +26,9 @@ module.exports = {
       zIndex: {
         '-10': '-10',
       },
+      maxWidth: {
+        poza: '10rem',
+      },
     },
   },
   variants: {
