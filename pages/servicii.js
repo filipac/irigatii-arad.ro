@@ -17,8 +17,8 @@ import Sprinklers from '@/components/svg/sprinkler2.svg';
 import FadeIn from 'react-fade-in';
 
 const ServiciuBox = styled.div`
-  ${tw`w-full bg-gray-100 shadow-lg p-12 rounded-xl mt-12 flex`}
-  ${(props) => (props.inverse ? tw`flex-row-reverse` : '')}
+  ${tw`bg-gray-100 shadow-lg mx-4 md:mx-0 p-6 md:p-12 rounded-xl items-center mt-12 flex flex-col md:flex-row`}
+  ${(props) => (props.inverse ? tw`md:flex-row-reverse` : '')}
 `;
 
 export default function Servicii() {

@@ -10,14 +10,18 @@ export const Menubar = () => {
     <div tw="container mx-auto pt-2">
       <div tw="flex flex-col md:flex-row justify-between items-center">
         <div>
-          <Image
-            src="/assets/images/logo-arad-irigatii.png"
-            alt="Arad Irigatii"
-            width={250}
-            layout={'fixed'}
-            height={100}
-            quality={100}
-          />
+          <Link href="/">
+            <a>
+              <Image
+                src="/assets/images/logo-arad-irigatii.png"
+                alt="Arad Irigatii"
+                width={250}
+                layout={'fixed'}
+                height={100}
+                quality={100}
+              />
+            </a>
+          </Link>
         </div>
         <div>
           <Menu>

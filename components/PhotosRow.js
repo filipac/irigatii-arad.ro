@@ -2,7 +2,6 @@ import tw from 'twin.macro';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import styled from 'styled-components';
-import Image from 'next/image';
 
 const HasDivider = styled.div`
   .custom-shape-divider-bottom-1611981857 {
@@ -47,20 +46,12 @@ const HasDivider = styled.div`
 
   .photo-row {
     & > div > div {
-      flex: 0.9;
+      flex: 1;
 
       img {
-        height: 100% !important;
+        height: 100%;
         object-fit: cover;
       }
-    }
-    & > div > div > div {
-      width: 100%;
-      height: 100%;
-    }
-    & > div > div > div > div {
-      width: 100%;
-      height: 100%;
     }
   }
 `;
@@ -74,62 +65,14 @@ const PhotosRow = () => {
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           >
             <Masonry gutter={5} className="photo-row">
-              <Image
-                width={474}
-                height={466}
-                tw="cursor-pointer"
-                style={{ width: '100%' }}
-                src="/assets/img/p1.jpg"
-              />
-              <Image
-                width={1024}
-                height={682}
-                tw="cursor-pointer"
-                style={{ width: '100%' }}
-                src="/assets/img/p10.jpg"
-              />
-              <Image
-                width={600}
-                height={600}
-                tw="cursor-pointer"
-                style={{ width: '100%' }}
-                src="/assets/img/p9.jpg"
-              />
-              <Image
-                width={800}
-                height={400}
-                tw="cursor-pointer"
-                style={{ width: '100%' }}
-                src="/assets/img/p3.jpg"
-              />
-              <Image
-                width={1000}
-                height={543}
-                tw="cursor-pointer"
-                style={{ width: '100%' }}
-                src="/assets/img/p5.jpg"
-              />
-              <Image
-                width={900}
-                height={675}
-                tw="cursor-pointer"
-                style={{ width: '100%' }}
-                src="/assets/img/p12.jpg"
-              />
-              <Image
-                width={768}
-                height={512}
-                tw="cursor-pointer"
-                style={{ width: '100%' }}
-                src="/assets/img/p6.jpg"
-              />
-              <Image
-                width={1100}
-                height={704}
-                tw="cursor-pointer"
-                style={{ width: '100%' }}
-                src="/assets/img/p13.jpg"
-              />
+              <img tw="cursor-pointer" width="100%" src="/assets/img/p1.jpg" />
+              <img tw="cursor-pointer" width="100%" src="/assets/img/p10.jpg" />
+              <img tw="cursor-pointer" width="100%" src="/assets/img/p9.jpg" />
+              <img tw="cursor-pointer" width="100%" src="/assets/img/p3.jpg" />
+              <img tw="cursor-pointer" width="100%" src="/assets/img/p5.jpg" />
+              <img tw="cursor-pointer" width="100%" src="/assets/img/p12.jpg" />
+              <img tw="cursor-pointer" width="100%" src="/assets/img/p6.jpg" />
+              <img tw="cursor-pointer" width="100%" src="/assets/img/p13.jpg" />
             </Masonry>
           </ResponsiveMasonry>
           {/* <div class="custom-shape-divider-bottom-1611981857">
