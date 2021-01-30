@@ -6,9 +6,9 @@ import Fb from '@/components/svg/facebook-logo.svg';
 export const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div tw="mt-80 relative">
+    <div tw="mt-20 md:mt-40 lg:mt-80 relative">
       <svg
-        tw="absolute -z-10 bottom-0"
+        tw="hidden md:block absolute -z-10 bottom-0"
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
         viewBox="0 0 1440 388"
