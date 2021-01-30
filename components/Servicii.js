@@ -3,7 +3,7 @@ import Farming from '@/components/svg/farming.svg';
 // import Harvest from '@/components/svg/harvest.svg';
 import Mower from '@/components/svg/mower.svg';
 import Grass from '@/components/svg/grass.svg';
-import Sprinklers from '@/components/svg/sprinklers.svg';
+import Sprinklers from '@/components/svg/sprinkler2.svg';
 import Tools from '@/components/svg/gardening-tools.svg';
 import tw from 'twin.macro';
 
