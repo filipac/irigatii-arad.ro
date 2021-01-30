@@ -4,5 +4,10 @@
     "paths": {
       "@/*": ["/*"]
     }
-  }
+  },
+  "exclude": [
+    ".next",
+    "out",
+    "public"
+  ]
 }
