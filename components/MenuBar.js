@@ -29,6 +29,9 @@ export const Menubar = () => {
             <li>
               <a href="#">Servicii</a>
             </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
           </Menu>
         </div>
         <div>
