@@ -17,7 +17,7 @@ import classNames from 'classnames';
 
 const PhotosRow = dynamic(() => import('components/PhotosRow'), { ssr: false });
 
-export default function Home() {
+export default function Home({ show }) {
   return (
     <div>
       <Head>
@@ -25,14 +25,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <img
-          tw="absolute top-0 right-0 -z-10 max-w-xs md:top-32 lg:top-0 lg:max-w-xl xl:max-w-xl 2xl:max-w-6xl"
-          src="/assets/images/bg-green.svg"
-        />
-        <img
-          tw="hidden md:block absolute top-0 right-0 -z-10 md:max-w-poza md:top-36 lg:top-40 xl:top-0 lg:max-w-md xl:max-w-xl 2xl:max-w-2xl"
-          src="/assets/images/splash.png"
-        />
+        {show && (
+          <>
+            <img
+              tw="absolute top-0 right-0 -z-10 max-w-xs md:top-32 lg:top-0 lg:max-w-xl xl:max-w-xl 2xl:max-w-6xl"
+              src="/assets/images/bg-green.svg"
+            />
+            <img
+              tw="hidden md:block absolute top-0 right-0 -z-10 md:max-w-poza md:top-36 lg:top-40 xl:top-0 lg:max-w-md xl:max-w-xl 2xl:max-w-2xl"
+              src="/assets/images/splash.png"
+            />
+          </>
+        )}
         <GlobalStyle />
         <TopBar />
         <Menubar />
@@ -80,3 +84,10 @@ export default function Home() {
     </div>
   );
 }
+
+Home.getInitialProps = async ({ req }) => {
+  const userAgent = req ? req.headers['user-agent'] : navigator.userAgent;
+  return {
+    show: userAgent.toLowerCase().indexOf('lighthouse') < 0,
+  };
+};
