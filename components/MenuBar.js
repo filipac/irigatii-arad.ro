@@ -43,8 +43,8 @@ export const Menubar = () => {
             </li>
           </Menu>
         </div>
-        <div>
-          <div>
+        <div tw="w-full text-center px-3 md:w-auto md:px-0">
+          <div tw="w-full text-center px-3 md:w-auto md:px-0">
             <a
               href="#"
               onClick={(e) => {
