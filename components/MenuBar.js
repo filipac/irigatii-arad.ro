@@ -1,5 +1,6 @@
 import { useModalState } from 'state/contactModal';
 import Image from 'next/image';
+import Link from '@/components/link';
 import { Menu } from './Menu';
 import tw from 'twin.macro';
 
@@ -21,18 +22,24 @@ export const Menubar = () => {
         <div>
           <Menu>
             <li>
-              <a href="#" className="current">
-                Acasa
-              </a>
+              <Link href="/">
+                <a>Acasa</a>
+              </Link>
             </li>
             <li>
-              <a href="#">Despre noi</a>
+              <Link href="/despre-noi">
+                <a>Despre noi</a>
+              </Link>
             </li>
             <li>
-              <a href="#">Servicii</a>
+              <Link href="/servicii">
+                <a>Servicii</a>
+              </Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link href="/contact">
+                <a>Contact</a>
+              </Link>
             </li>
           </Menu>
         </div>

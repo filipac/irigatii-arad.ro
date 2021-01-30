@@ -4,10 +4,6 @@ import classNames from 'classnames';
 import tw from 'twin.macro';
 import { Quote } from './Quote';
 
-export const Input = styled.input`
-  ${tw`border border-gray-300 px-2 py-4 w-full rounded-xl`}
-`;
-
 export const QuoteModalRoot = styled.div`
   .animated {
     -webkit-animation-duration: 1s;

@@ -10,7 +10,7 @@ import PersonPic from '@/components/svg/undraw_male_avatar_323b.svg';
 import { StyledQuote } from './StyledQuote';
 import { TypeBtn } from './TypeBtn';
 import ReactLoading from 'react-loading';
-import { Input } from './QuoteModal';
+import { Input } from './Input';
 import tw from 'twin.macro';
 import { ParallaxBanner } from 'react-scroll-parallax';
 
