@@ -43,6 +43,7 @@ export default function Home() {
             'mt-12 pt-6 2xl:mt-48 2xl:pt-16': true,
           })}
         >
+          {/* {typeof window !== 'undefined' && ( */}
           <ParallaxBanner
             className="lg:h-500 auto-height"
             layers={[
@@ -69,6 +70,7 @@ export default function Home() {
               </div>
             </Quote>
           </ParallaxBanner>
+          {/* )} */}
         </StyledQuote>
         <Servicii />
         <PhotosRow />

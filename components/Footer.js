@@ -20,7 +20,7 @@ export const Footer = () => {
         ></path>
       </svg>
       <div tw="flex flex-col md:flex-row md:items-center md:justify-between max-w-fit md:max-w-5xl mx-auto pb-12 px-12 lg:px-0">
-        <div class="flex items-center">
+        <div className="flex items-center">
           <div>
             <Telephone width="32" />
           </div>
@@ -29,7 +29,7 @@ export const Footer = () => {
             <span>+40 (756) 804 311</span>
           </div>
         </div>
-        <div class="flex items-center mt-4 md:mt-0">
+        <div className="flex items-center mt-4 md:mt-0">
           <div>
             <Email width="32" />
           </div>
@@ -38,7 +38,7 @@ export const Footer = () => {
             <span>flavius@arad-irigatii.ro</span>
           </div>
         </div>
-        <div class="flex items-center mt-4 md:mt-0">
+        <div className="flex items-center mt-4 md:mt-0">
           <div>
             <Fb width="32" height="32" />
           </div>

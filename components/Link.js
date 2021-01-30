@@ -10,8 +10,6 @@ const _Link = ({ href, children }) => {
     className = `${className} current`;
   }
 
-  console.log({ href, children, p: router.pathname, className });
-
   return (
     <Link href={href} className={className}>
       {React.cloneElement(children, { className })}

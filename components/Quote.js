@@ -10,13 +10,16 @@ import PersonPic from '@/components/svg/undraw_male_avatar_323b.svg';
 import { StyledQuote } from './StyledQuote';
 import { TypeBtn } from './TypeBtn';
 import ReactLoading from 'react-loading';
-import { Input } from './Input';
-import tw from 'twin.macro';
+import tw, { styled } from 'twin.macro';
 import { ParallaxBanner } from 'react-scroll-parallax';
 
 const ExampleLoader = ({ type, color }) => (
   <ReactLoading type={'spin'} color={'#000'} />
 );
+
+export const Input = styled.input`
+  ${tw`border border-gray-300 px-2 py-4 w-full rounded-xl`}
+`;
 
 export const Quote = ({ slim = false, children }) => {
   const [type, setType] = useState('persoana');
