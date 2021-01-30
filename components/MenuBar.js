@@ -15,6 +15,7 @@ export const Menubar = () => {
             width={250}
             layout={'fixed'}
             height={100}
+            quality={100}
           />
         </div>
         <div>
