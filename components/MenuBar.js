@@ -13,6 +13,7 @@ export const Menubar = () => {
             src="/assets/images/logo-arad-irigatii.png"
             alt="Arad Irigatii"
             width={250}
+            layout={'fixed'}
             height={100}
           />
         </div>
