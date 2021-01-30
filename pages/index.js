@@ -42,12 +42,12 @@ const TopBar = () => {
   return (
     <div tw="bg-brown-900  p-4">
       <div tw="container mx-auto w-full bg-brown-900 flex">
-        <div tw="text-white flex flex-col md:flex-row">
+        <div tw="text-white flex flex-row">
           <div>
             <span tw="font-bold">Telefon:</span> 0721 123 456
           </div>
           <div>
-            <span tw="font-bold md:ml-2">Email:</span> flavius@arad-irigatii.ro
+            <span tw="font-bold ml-2">Email:</span> flavius@arad-irigatii.ro
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@ const Menubar = () => {
   const { show } = useModalState();
   return (
     <div tw="container mx-auto pt-2">
-      <div tw="flex justify-between items-center">
+      <div tw="flex flex-col md:flex-row justify-between items-center">
         <div>
           <Image
             src="/assets/images/logo-arad-irigatii.png"
@@ -104,7 +104,7 @@ const Menubar = () => {
 
 const Hero = () => {
   return (
-    <div tw="container mx-auto mt-24">
+    <div tw="container mx-auto mt-24 px-12 lg:px-6 xl:px-0">
       <div>
         <h1 tw="text-5xl font-bold">
           Clientii nostri
@@ -126,7 +126,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div tw="mt-8 flex">
+        <div tw="mt-8 flex flex-col xl:flex-row">
           <div tw="max-w-lg">
             <div tw="font-bold text-xl">Cine suntem?</div>
             <div tw="mt-2 text-gray-600">
@@ -138,7 +138,7 @@ const Hero = () => {
               <a href="#">Citeste mai mult</a>
             </div>
           </div>
-          <div tw="max-w-lg">
+          <div tw="max-w-lg mt-2 xl:mt-0">
             <div tw="font-bold text-xl">Ce facem?</div>
             <div tw="mt-2 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -318,7 +318,7 @@ const Quote = ({ slim = false }) => {
     <StyledQuote
       tw="relative"
       className={classNames({
-        'mt-96 pt-32 pb-16': !slim,
+        'mt-12 pt-6 pb-6 2xl:mt-48 2xl:pt-16 2xl:pb-16': !slim,
       })}
     >
       <svg
@@ -335,9 +335,9 @@ const Quote = ({ slim = false }) => {
           fill="#F4F4F4"
         ></path>
       </svg>
-      <div tw="flex items-center justify-center max-w-6xl mx-auto">
+      <div tw="flex flex-col lg:flex-row items-center justify-center max-w-full xl:max-w-6xl mx-auto">
         {!slim && (
-          <div tw="pr-6">
+          <div tw="pb-6 lg:pb-0 lg:pr-6">
             <Gardening width="12rem" height="auto" />
           </div>
         )}
@@ -486,7 +486,7 @@ const Quote = ({ slim = false }) => {
           )}
         </div>
         {!slim && (
-          <div tw="pl-6">
+          <div tw="hidden lg:block lg:pl-6">
             {/* <LawnMower width="12rem" /> */}
             <Sprinkler width="12rem" height="auto" />
           </div>
@@ -505,11 +505,11 @@ export default function Home() {
       </Head>
       <Container>
         <img
-          tw="absolute top-0 right-0 -z-10 max-w-6xl"
+          tw="hidden lg:block absolute top-0 right-0 -z-10 lg:max-w-xl xl:max-w-xl 2xl:max-w-6xl"
           src="/assets/images/bg-green.svg"
         />
         <img
-          tw="absolute top-0 right-0 -z-10 max-w-2xl"
+          tw="hidden lg:block absolute top-0 right-0 -z-10 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
           src="/assets/images/splash.png"
         />
         <GlobalStyle />
