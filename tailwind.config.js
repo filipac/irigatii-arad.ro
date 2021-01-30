@@ -28,6 +28,7 @@ module.exports = {
       },
       maxWidth: {
         poza: '10rem',
+        fit: 'fit-content',
       },
     },
   },
