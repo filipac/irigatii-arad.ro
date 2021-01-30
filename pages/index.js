@@ -22,11 +22,11 @@ export default function Home() {
       </Head>
       <Container>
         <img
-          tw="absolute top-0 right-0 -z-10 max-w-xs md:top-32 lg:max-w-xl xl:max-w-xl 2xl:max-w-6xl"
+          tw="absolute top-0 right-0 -z-10 max-w-xs md:top-32 lg:top-0 lg:max-w-xl xl:max-w-xl 2xl:max-w-6xl"
           src="/assets/images/bg-green.svg"
         />
         <img
-          tw="hidden md:block absolute top-0 right-0 -z-10 md:max-w-poza md:top-40 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+          tw="hidden md:block absolute top-0 right-0 -z-10 md:max-w-poza md:top-36 lg:top-40 xl:top-0 lg:max-w-md xl:max-w-xl 2xl:max-w-2xl"
           src="/assets/images/splash.png"
         />
         <GlobalStyle />
