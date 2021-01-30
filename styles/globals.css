@@ -23,5 +23,9 @@
         .h-500 {
             height: 500px !important;
         }
+
+        .auto-height {
+            height: auto !important;
+        }
     }
 }

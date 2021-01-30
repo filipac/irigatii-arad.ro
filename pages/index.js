@@ -44,7 +44,7 @@ export default function Home() {
           })}
         >
           <ParallaxBanner
-            className="lg:h-500"
+            className="lg:h-500 auto-height"
             layers={[
               {
                 image: '/assets/img/sprinkler-head.jpg',
@@ -56,7 +56,7 @@ export default function Home() {
             }}
           >
             <Quote>
-              <div tw="flex-1 flex flex-col items-center justify-center z-10 text-white">
+              <div tw="flex-1 flex flex-col items-center justify-center z-10 py-8 md:py-0 text-white">
                 <h1
                   tw="text-3xl text-center md:text-left md:text-6xl"
                   className="text-shadow-lg"
