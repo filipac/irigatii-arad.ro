@@ -43,6 +43,17 @@ const HasDivider = styled.div`
   .custom-shape-divider-top-1611982054 .shape-fill {
     fill: #f4f4f4;
   }
+
+  .photo-row {
+    & > div > div {
+      flex: 1;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 `;
 
 const PhotosRow = () => {
@@ -53,7 +64,7 @@ const PhotosRow = () => {
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           >
-            <Masonry gutter={5}>
+            <Masonry gutter={5} className="photo-row">
               <img tw="cursor-pointer" width="100%" src="/assets/img/p1.jpg" />
               <img tw="cursor-pointer" width="100%" src="/assets/img/p10.jpg" />
               <img tw="cursor-pointer" width="100%" src="/assets/img/p9.jpg" />

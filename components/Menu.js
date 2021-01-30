@@ -14,7 +14,7 @@ export const Menu = styled.ul`
       &:hover {
         ${tw`text-black bg-green-500 rounded-lg -translate-y-1 scale-110`}
       }
-      ${tw`block font-bold tracking-wide text-sm md:text-lg uppercase p-2`}
+      ${tw`block font-bold tracking-wide text-xs md:text-lg uppercase p-2`}
       ${tw`transition ease-in-out duration-500 transform`}
     }
   }

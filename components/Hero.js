@@ -2,7 +2,7 @@ import tw from 'twin.macro';
 
 export const Hero = () => {
   return (
-    <div tw="container mx-auto mt-24 px-12 lg:px-6 xl:px-0">
+    <div tw="container mx-auto mt-12 md:mt-24 px-12 lg:px-6 xl:px-0">
       <div>
         <h1 tw="text-5xl font-bold">
           Clientii nostri

@@ -26,6 +26,7 @@
     "react-loading": "^2.0.3",
     "react-masonry-grid": "^1.0.17",
     "react-responsive-masonry": "^2.1.1",
+    "react-scroll-parallax": "^2.3.5",
     "recoil": "^0.1.2",
     "simple-react-lightbox": "^3.5.5",
     "styled-components": "^5.2.1",

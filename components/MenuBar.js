@@ -44,7 +44,7 @@ export const Menubar = () => {
                 e.preventDefault();
                 show();
               }}
-              tw="inline-block bg-green-500 hover:bg-green-600 transition ease-in-out duration-500 transform p-4 text-black hover:text-white block border-b-2 border-r-2 hover:scale-110 border-black inset-1 font-bold rounded-lg"
+              tw="mt-8 md:mt-0 inline-block bg-green-500 hover:bg-green-600 transition ease-in-out duration-500 transform p-4 text-black hover:text-white block border-b-2 border-r-2 hover:scale-110 border-black inset-1 font-bold rounded-lg"
             >
               Cere o oferta
             </a>
