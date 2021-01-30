@@ -1,6 +1,6 @@
 import { useModalState } from 'state/contactModal';
 import Image from 'next/image';
-import Link from '@/components/link';
+import Link from '@/components/Link';
 import { Menu } from './Menu';
 import tw from 'twin.macro';
 
