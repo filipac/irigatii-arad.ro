@@ -11,7 +11,7 @@ export const Menubar = () => {
         <div>
           <Image
             src="/assets/images/logo-arad-irigatii.png"
-            alt="Picture of the author"
+            alt="Arad Irigatii"
             width={250}
             height={100}
           />

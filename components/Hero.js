@@ -28,9 +28,8 @@ export const Hero = () => {
           <div tw="max-w-lg">
             <div tw="font-bold text-xl">Cine suntem?</div>
             <div tw="mt-2 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              nisi urna, mattis sit amet gravida in, tincidunt a ex. Donec
-              convallis mi vitae lacus gravida fringilla.
+              Suntem o companie tanara aparuta din pasiunea pentru spatii verzi,
+              gradini si gradinarit.
             </div>
             <div tw="mt-2 uppercase text-green-500">
               <a href="#">Citeste mai mult</a>
@@ -39,9 +38,8 @@ export const Hero = () => {
           <div tw="max-w-lg mt-2 xl:mt-0">
             <div tw="font-bold text-xl">Ce facem?</div>
             <div tw="mt-2 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              nisi urna, mattis sit amet gravida in, tincidunt a ex. Donec
-              convallis mi vitae lacus gravida fringilla.
+              Oferim servicii de proiectare, executie si intretinere de gradini
+              si spatii verzi cu toate etapele ce implica acestea.
             </div>
             <div tw="mt-2 uppercase text-green-500">
               <a href="#">Citeste mai mult</a>

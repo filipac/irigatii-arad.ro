@@ -8,10 +8,11 @@ import { Hero } from 'components/Hero';
 import { Quote } from 'components/Quote';
 import { QuoteModal } from 'components/QuoteModal';
 import tw from 'twin.macro';
+import { Servicii } from 'components/Servicii';
+import dynamic from 'next/dynamic';
+import { Footer } from 'components/Footer';
 
-const Servicii = () => {
-  return <p>da</p>;
-};
+const PhotosRow = dynamic(() => import('components/PhotosRow'), { ssr: false });
 
 export default function Home() {
   return (
@@ -34,7 +35,9 @@ export default function Home() {
         <Menubar />
         <Hero />
         <Quote />
-        {/* <Servicii /> */}
+        <Servicii />
+        <PhotosRow />
+        <Footer />
         <QuoteModal />
       </Container>
     </div>
