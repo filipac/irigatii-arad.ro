@@ -50,7 +50,7 @@ const HasDivider = styled.div`
 
       img {
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
       }
     }
   }
