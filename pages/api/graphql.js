@@ -7,6 +7,7 @@ const typeDefs = gql`
   }
   type Mutation {
     sendContactEmail(
+      tip: String!
       nume: String!
       prenume: String!
       telefon: String!
@@ -41,8 +42,15 @@ const resolvers = {
       let html = `
         Salut, <br>
         Ai o cerere noua de contact de pe <strong>arad-irigatii.ro</strong>: <br> <br>
-        <strong>Nume:</strong> ${args.nume} <br>
-        <strong>Prenume:</strong> ${args.prenume} <br>
+        <strong>Tip Contact:</strong> ${
+          args.tip == 'companie' ? 'Companie' : 'Persoana'
+        } <br>
+        <strong>${
+          args.tip == 'companie' ? 'Nume Companie' : 'Nume'
+        }:</strong> ${args.nume} <br>
+        <strong>${
+          args.tip == 'companie' ? 'Persoana de contact' : 'Prenume'
+        }:</strong> ${args.prenume} <br>
         <strong>Telefon:</strong> ${args.telefon} <br>
         ${args.email ? '<strong>Email:</strong> ' + args.email + ' <br>' : ''}
         <br>
