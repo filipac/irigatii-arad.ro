@@ -59,7 +59,7 @@ export const Footer = () => {
       <div tw="w-full bg-brown-900 py-8 px-8 md:px-0 flex flex-col text-center items-center justify-center text-white">
         <div>Copyright &copy; {year} Irigatii Arad.</div>
         <div>
-          Freshly backed by{' '}
+          Freshly baked by{' '}
           <a
             href="https://pacurar.net"
             target="_blank"
