@@ -3,6 +3,15 @@ import Image from 'next/image';
 import Link from '@/components/Link';
 import { Menu } from './Menu';
 import tw from 'twin.macro';
+import styled from 'styled-components';
+
+const LogoA = styled.a`
+  & > div,
+  img {
+    // max-width: 300px !important;
+    // max-height: 100px !important;
+  }
+`;
 
 export const Menubar = () => {
   const { show } = useModalState();
@@ -11,16 +20,16 @@ export const Menubar = () => {
       <div tw="flex flex-col md:flex-row justify-between items-center">
         <div>
           <Link href="/">
-            <a>
+            <LogoA>
               <Image
                 src="/assets/images/logo-arad-irigatii.png"
                 alt="Arad Irigatii"
-                width={250}
+                width={300}
                 layout={'fixed'}
-                height={100}
+                height={120}
                 quality={100}
               />
-            </a>
+            </LogoA>
           </Link>
         </div>
         <div>
