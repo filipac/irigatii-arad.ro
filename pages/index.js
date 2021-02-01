@@ -77,7 +77,7 @@ export default function Home({ show }) {
           {/* )} */}
         </StyledQuote>
         <Servicii />
-        <PhotosRow />
+        {show && <PhotosRow />}
         <Footer />
         <QuoteModal />
       </Container>
