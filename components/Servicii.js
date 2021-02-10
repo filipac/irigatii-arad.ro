@@ -78,9 +78,9 @@ export const Servicii = () => {
                 Intretinere gradini / spatii verzi
               </div>
               <div tw="mt-2 text-left">
-                Dispunem de toate mijloacele necesare pentru a intretine gradina
-                sau spatiul tau verde. Salvezi timp si lasi profesionistii sa
-                iti intretina spatiul tau.
+                Pentru cei dinspre Dvs cărora timpul sau cunoștințele nu le
+                permit sa-și întrețină grădina noi Deținem utilajele și
+                know-how-ul pentru a o face in locul dumneavoastră.
               </div>
             </div>
             <div tw="hidden lg:flex col-span-2 justify-center items-center">
@@ -94,9 +94,10 @@ export const Servicii = () => {
               </div>
               <div tw="font-bold text-xl mt-2">Gazon</div>
               <div tw="mt-2 text-left">
-                Ca e primavara, vara sau toamna, noi iti putem planta sau
-                instala un gazon perfect. Daca se alege metoda rulourilor,
-                vorbim si despre iarna :).
+                Va stam la dispoziție cu servicii de înființare peluze de gazon
+                prin însămânțare sau montaj rulouri. De asemenea oferim servicii
+                de scarificare, fertilizare, supraînsămânțare sau tratamente
+                pentru bolile ce pot apărea.
               </div>
             </div>
             <div tw="p-12 bg-green-500 rounded-3xl">
@@ -105,13 +106,10 @@ export const Servicii = () => {
               </div>
               <div tw="font-bold text-xl mt-2">Sisteme de irigatii</div>
               <div tw="mt-2 text-left">
-                <span tw="font-bold">
-                  Un spatiu verde frumos amenajat fara un sistem bun de irigatii
-                  este precum o masina Tesla trecuta pe GPL
-                </span>
-                . Avem expertiza necesare pentru a valorifica fiecare colt de
-                teren atunci cand instalam un sistem de irigatii. Desigur,
-                automatizarea nu trebuie sa lipseasca.
+                Un sistem de irigatii este indispensabil pentru ca grădina sa
+                arate foarte bine in orice perioada a anului. Noi proiectam și
+                executam sisteme de irigat prin aspersie, picurare subterana sau
+                supraterana in funcție de specificitatea grădinii dumneavoastră.
               </div>
             </div>
           </div>
