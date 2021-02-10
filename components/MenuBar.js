@@ -40,13 +40,13 @@ export const Menubar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/servicii">
-                <a>Servicii</a>
+              <Link href="/despre-noi">
+                <a>Despre noi</a>
               </Link>
             </li>
             <li>
-              <Link href="/despre-noi">
-                <a>Despre noi</a>
+              <Link href="/servicii">
+                <a>Servicii</a>
               </Link>
             </li>
             <li>

@@ -1,6 +1,6 @@
 import tw from 'twin.macro';
 import Telephone from '@/components/svg/telephone.svg';
-import Email from '@/components/svg/email.svg';
+import Insta from '@/components/svg/instagram.svg';
 import Fb from '@/components/svg/facebook-logo.svg';
 
 export const Footer = () => {
@@ -31,11 +31,19 @@ export const Footer = () => {
         </div>
         <div className="flex items-center mt-4 md:mt-0">
           <div>
-            <Email width="32" />
+            <Insta width="32" />
           </div>
           <div tw="ml-4">
-            <p tw="font-bold">Trimite-ne mail</p>
-            <span>flavius@arad-irigatii.ro</span>
+            <p tw="font-bold">Instagram</p>
+            <span>
+              <a
+                tw="cursor-pointer underline"
+                href="https://www.instagram.com/aradgardens/"
+                target="_blank"
+              >
+                instagram.com/aradgardens
+              </a>
+            </span>
           </div>
         </div>
         <div className="flex items-center mt-4 md:mt-0">
