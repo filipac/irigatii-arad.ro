@@ -16,6 +16,12 @@ import Grass from '@/components/svg/grass.svg';
 import Check from '@/components/svg/check.svg';
 import Sprinklers from '@/components/svg/sprinkler2.svg';
 import FadeIn from 'react-fade-in';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+import { StyledQuote } from 'components/StyledQuote';
+import classNames from 'classnames';
+import { ParallaxBanner } from 'react-scroll-parallax';
+import { Quote } from 'components/Quote';
 
 const ServiciuBox = styled.div`
   ${tw`bg-gray-100 shadow-lg mx-4 md:mx-0 p-6 md:p-12 rounded-xl items-center mt-12 flex flex-col md:flex-row md:justify-between`}
@@ -39,16 +45,50 @@ export default function Servicii() {
         <Menubar />
 
         <div className="container mx-auto">
-          <div tw="flex flex-col pb-48">
+          <div tw="flex flex-col pb-12">
             <FadeIn>
               <ServiciuBox>
-                <div>
-                  <div tw="flex justify-center text-green-500">
-                    <Farming width="5rem" height="5rem" />
+                <div tw="flex-1 h-full">
+                  <div>
+                    <div tw="flex justify-center text-green-500">
+                      <Farming width="5rem" height="5rem" />
+                    </div>
+                    <div tw="font-bold text-xl text-center mt-2">
+                      Proiectare si amenajare gradini / spatii verzi
+                    </div>
                   </div>
-                  <div tw="font-bold text-xl mt-2">
-                    Proiectare si amenajare gradini / spatii verzi
-                  </div>
+                  <Carousel
+                    showThumbs={false}
+                    showIndicators={false}
+                    showStatus={false}
+                    autoPlay
+                    stopOnHover
+                    infiniteLoop
+                    tw="mt-3"
+                    interval={2000}
+                  >
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p1.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p2.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p7.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                  </Carousel>
                 </div>
                 <div tw="flex-1 flex flex-row-reverse">
                   <div>
@@ -91,13 +131,47 @@ export default function Servicii() {
                 </div>
               </ServiciuBox>
               <ServiciuBox inverse>
-                <div>
-                  <div tw="flex justify-center text-green-500">
-                    <Mower width="5rem" height="5rem" />
+                <div tw="flex-1 h-full">
+                  <div>
+                    <div tw="flex justify-center text-green-500">
+                      <Mower width="5rem" height="5rem" />
+                    </div>
+                    <div tw="font-bold text-xl mt-2 text-center">
+                      Intretinere gradini / spatii verzi
+                    </div>
                   </div>
-                  <div tw="font-bold text-xl mt-2">
-                    Intretinere gradini / spatii verzi
-                  </div>
+                  <Carousel
+                    showThumbs={false}
+                    showIndicators={false}
+                    showStatus={false}
+                    autoPlay
+                    stopOnHover
+                    infiniteLoop
+                    tw="mt-3"
+                    interval={2500}
+                  >
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p6.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p10.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p12.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                  </Carousel>
                 </div>
                 <div tw="flex-1">
                   <div tw="mt-3 md:mt-0 max-w-xl">
@@ -136,11 +210,52 @@ export default function Servicii() {
                 </div>
               </ServiciuBox>
               <ServiciuBox>
-                <div>
-                  <div tw="flex justify-center text-green-500">
-                    <Grass width="5rem" height="5rem" />
+                <div tw="flex-1 h-full">
+                  <div>
+                    <div tw="flex justify-center text-green-500">
+                      <Grass width="5rem" height="5rem" />
+                    </div>
+                    <div tw="font-bold text-xl mt-2 text-center">Gazon</div>
                   </div>
-                  <div tw="font-bold text-xl mt-2">Gazon</div>
+                  <Carousel
+                    showThumbs={false}
+                    showIndicators={false}
+                    showStatus={false}
+                    autoPlay
+                    stopOnHover
+                    infiniteLoop
+                    tw="mt-3"
+                    interval={3000}
+                  >
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p3.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p4.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p8.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p13.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                  </Carousel>
                 </div>
                 <div tw="flex-1 flex flex-row-reverse">
                   <div>
@@ -171,13 +286,49 @@ export default function Servicii() {
                 </div>
               </ServiciuBox>
               <ServiciuBox inverse>
-                <div>
-                  <div tw="flex justify-center text-green-500">
-                    <Sprinklers width="6rem" height="6rem" />
+                <div tw="flex-1 h-full">
+                  <div>
+                    <div tw="flex justify-center text-green-500">
+                      <Sprinklers width="6rem" height="6rem" />
+                    </div>
+                    <div tw="font-bold text-xl mt-2 text-center">
+                      Sisteme de irigatii
+                    </div>
                   </div>
-                  <div tw="font-bold text-xl mt-2">Sisteme de irigatii</div>
+                  <Carousel
+                    showThumbs={false}
+                    showIndicators={false}
+                    showStatus={false}
+                    autoPlay
+                    stopOnHover
+                    infiniteLoop
+                    tw="mt-3"
+                    interval={3500}
+                  >
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p5.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p9.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                    <div tw="h-full">
+                      <img
+                        tw="h-full"
+                        src="/assets/img/p11.jpg"
+                        style={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                  </Carousel>
                 </div>
-                <div tw="flex-1">
+                <div tw="flex-1 md:pr-12">
                   <div tw="mt-3 md:mt-0 max-w-xl">
                     <strong>Irigatiile</strong> au un rol esential pentru
                     infiintarea si intretinerea suprafetelor cu gazon sau a
@@ -228,6 +379,42 @@ export default function Servicii() {
             </FadeIn>
           </div>
         </div>
+
+        <StyledQuote
+          tw="relative"
+          className={classNames({
+            'mt-2 pt-6 pb-48': true,
+          })}
+        >
+          {/* {typeof window !== 'undefined' && ( */}
+          <ParallaxBanner
+            className="lg:h-500 auto-height"
+            layers={[
+              {
+                image: '/assets/img/sprinkler-head.jpg',
+                amount: 0.5,
+              },
+            ]}
+            style={{
+              minHeight: '500px',
+            }}
+          >
+            <Quote>
+              <div tw="flex-1 flex flex-col items-center justify-center z-10 py-8 md:py-0 text-white">
+                <h1
+                  tw="text-3xl text-center md:text-left md:text-6xl"
+                  className="text-shadow-lg"
+                >
+                  Contacteaza-ne
+                </h1>
+                <div tw="mt-2 mb-4 md:mb-0 text-2xl" className="text-shadow-md">
+                  Raspundem cat mai prompt.
+                </div>
+              </div>
+            </Quote>
+          </ParallaxBanner>
+          {/* )} */}
+        </StyledQuote>
 
         <Footer />
         <QuoteModal />
