@@ -21,7 +21,7 @@ export const Input = styled.input`
   ${tw`border border-gray-300 px-2 py-4 w-full rounded-xl`}
 `;
 
-export const Quote = ({ slim = false, children }) => {
+export const Quote = ({ slim = false, children, insideBox = '' }) => {
   const [type, setType] = useState('persoana');
   const { register, handleSubmit, watch, errors } = useForm();
   const [sent, setSent] = useState(false);
@@ -100,6 +100,7 @@ export const Quote = ({ slim = false, children }) => {
         tw="bg-white pb-12 mx-3 md:mx-12 rounded-2xl md:flex-1 md:max-w-lg flex flex-col items-center pt-6 relative"
         className="contact-box"
       >
+        {insideBox}
         {sending && (
           <>
             <div tw="absolute h-full w-full bg-white z-40 opacity-90"></div>
