@@ -37,7 +37,8 @@ export default function Contact() {
           </div>
           <div tw="mt-2">
             De asemenea, ne poti scrie pe retelele sociale pe care le regasesti
-            mai jos.
+            mai jos sau ne poti suna la numarul de telefon{' '}
+            <strong tw="font-bold">+40 (756) 804 311</strong> .
           </div>
         </div>
 
