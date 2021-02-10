@@ -5,9 +5,9 @@ export const Hero = () => {
     <div tw="container mx-auto mt-12 md:mt-24 px-12 lg:px-6 xl:px-0">
       <div>
         <h1 tw="text-5xl font-bold">
-          Gradina dumneavoastra pe
+          Gradina dumneavoastra
           <br />
-          maini bune!
+          pe maini bune!
         </h1>
         <div className="mt-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
