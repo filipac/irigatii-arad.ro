@@ -21,7 +21,7 @@ export default function Home({ show }) {
   return (
     <div>
       <Head>
-        <title>Irigatii Arad</title>
+        <title>Irigatii Arad - Amenajare si intretinere spatii verzi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
