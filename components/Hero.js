@@ -10,7 +10,7 @@ export const Hero = () => {
           <br />
           pe maini bune!
         </h1>
-        <div className="mt-2">
+        <div className="mt-2 max-w-lg">
           Va stam la dispozitie cu o gama larga de servicii pentru gradina si
           spatiile dumneavoastra verzi. Avem o expertiza larga incat sa acoperim
           cele mai stricte necesitati.
