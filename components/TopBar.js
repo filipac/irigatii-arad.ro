@@ -9,7 +9,7 @@ export const TopBar = () => {
             <span tw="font-bold">Telefon:</span> +40 (756) 804 311
           </div>
           <div>
-            <span tw="font-bold ml-2">Email:</span> flavius@arad-irigatii.ro
+            <span tw="font-bold ml-2">Email:</span> flavius@arad-gardens.ro
           </div>
         </div>
       </div>
