@@ -27,8 +27,8 @@ export const Menubar = () => {
           <Link href="/">
             <LogoA>
               <Image
-                src="/assets/images/logo-arad-irigatii.png"
-                alt="Arad Irigatii"
+                src="/assets/images/logo-arad-gardens.png"
+                alt="Arad Gardens"
                 width={300}
                 layout={'fixed'}
                 height={120}
