@@ -5,6 +5,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
+      peppermint: 'rgba(231, 246, 224, 1.00)',
       transparent: 'transparent',
       current: 'currentColor',
       transparent: 'transparent',
