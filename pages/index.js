@@ -1,30 +1,71 @@
 import GlobalStyle from 'components/GlobalStyles';
 import { Container } from 'components/styled/Container';
+
 import Head from 'next/head';
-// import LawnMower from '@/components/svg/lawn-mower.svg';
+
 import { TopBar } from 'components/TopBar';
 import { Menubar } from 'components/MenuBar';
 import { Hero } from 'components/Hero';
 import { Quote } from 'components/Quote';
 import { QuoteModal } from 'components/QuoteModal';
+
 import tw from 'twin.macro';
+
 import { Servicii } from 'components/Servicii';
+
 import dynamic from 'next/dynamic';
+
 import { Footer } from 'components/Footer';
+
 import { ParallaxBanner } from 'react-scroll-parallax';
+
 import { StyledQuote } from 'components/StyledQuote';
+
 import classNames from 'classnames';
+
+import { useLayoutEffect } from 'react';
 
 const PhotosRow = dynamic(() => import('components/PhotosRow'), { ssr: false });
 
 export default function Home({ show }) {
+  useLayoutEffect(() => {
+    const check = () => {
+      let splash = document.getElementById('splash');
+      let contact = document.getElementById('contact-item');
+      let rect1 = splash.getBoundingClientRect();
+      let rect2 = contact.getBoundingClientRect();
+      let conds = [
+        rect1.right < rect2.left,
+        rect1.left + 150 > rect2.right,
+        rect1.bottom < rect2.top,
+        rect1.top > rect2.bottom,
+      ];
+      console.log(conds);
+      var overlap = !(conds[0] || conds[1] || conds[2] || conds[3]);
+      if (overlap) {
+        // contact.classList.add('text-white');
+        contact.classList.add('bg-peppermint');
+        contact.classList.add('rounded-lg');
+      } else {
+        // contact.classList.remove('text-white');
+        contact.classList.remove('bg-peppermint');
+        contact.classList.remove('rounded-lg');
+      }
+    };
+    check();
+    window.addEventListener('resize', check);
+    return () => {
+      window.removeEventListener('resize', check);
+    };
+  }, []);
+
   return (
     <div>
       <Head>
         <title>Irigatii Arad - Amenajare si intretinere spatii verzi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container>
+      <Container tw="relative">
         {show && (
           <>
             <img
@@ -32,6 +73,7 @@ export default function Home({ show }) {
               src="/assets/images/bg-green.svg"
             />
             <img
+              id="splash"
               tw="hidden md:block absolute top-0 right-0 -z-10 md:max-w-poza md:top-36 lg:top-40 xl:top-0 lg:max-w-md xl:max-w-xl 2xl:max-w-2xl"
               src="/assets/images/splash.png"
             />

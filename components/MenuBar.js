@@ -8,6 +8,8 @@ import tw from 'twin.macro';
 
 import styled from 'styled-components';
 
+import { useLayoutEffect } from 'react';
+
 import { Menu } from './Menu';
 
 const LogoA = styled.a`
@@ -54,12 +56,12 @@ export const Menubar = () => {
                 <a>Servicii</a>
               </Link>
             </li>
-            <li>
+            <li id="photo-item">
               <Link href="/galerie-foto">
                 <a>Galerie Foto</a>
               </Link>
             </li>
-            <li>
+            <li id="contact-item">
               <Link href="/contact">
                 <a>Contact</a>
               </Link>
