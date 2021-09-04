@@ -35,13 +35,13 @@ const resolvers = {
         port: smtp_port,
         secure: true, // true for 465, false for other ports
         auth: {
-          user: 'no-reply@arad-irigatii.ro', // generated ethereal user
-          pass: 'PHxBxtT2W6PnaU3', // generated ethereal password
+          user: 'no-reply@arad-gardens.ro.ro', // generated ethereal user
+          pass: process.env.SMTP_PASS, // generated ethereal password
         },
       });
       let html = `
         Salut, <br>
-        Ai o cerere noua de contact de pe <strong>arad-irigatii.ro</strong>: <br> <br>
+        Ai o cerere noua de contact de pe <strong>arad-gardens.ro.ro</strong>: <br> <br>
         <strong>Tip Contact:</strong> ${
           args.tip == 'companie' ? 'Companie' : 'Persoana'
         } <br>
@@ -57,9 +57,9 @@ const resolvers = {
         Cam atat.
       `;
       let info = await transporter.sendMail({
-        from: '"Arad-Irigatii" <no-reply@arad-irigatii.ro>', // sender address
+        from: '"Arad Gardens" <no-reply@arad-gardens.ro>', // sender address
         to: 'filip@pacurar.net',
-        subject: 'Cerere Contact Arad-Irigatii.ro',
+        subject: 'Cerere Contact Arad-Gardens.ro',
         html,
       });
       return true;

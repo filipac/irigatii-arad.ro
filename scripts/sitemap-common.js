@@ -4,7 +4,7 @@ const prettier = require('prettier');
 
 const getDate = new Date().toISOString();
 
-const YOUR_AWESOME_DOMAIN = 'https://arad-irigatii.ro';
+const YOUR_AWESOME_DOMAIN = 'https://arad-gardens.ro';
 
 const formatted = (sitemap) => prettier.format(sitemap, { parser: 'html' });
 
