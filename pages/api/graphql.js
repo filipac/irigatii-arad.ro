@@ -19,7 +19,7 @@ const typeDefs = gql`
   }
 `;
 
-const smtp_host = 'hosting2157534.online.pro';
+const smtp_host = 'hosting2171794.online.pro';
 const smtp_port = 465;
 
 const resolvers = {
@@ -35,13 +35,13 @@ const resolvers = {
         port: smtp_port,
         secure: true, // true for 465, false for other ports
         auth: {
-          user: 'no-reply@arad-gardens.ro.ro', // generated ethereal user
+          user: 'no-reply@arad-gardens.ro', // generated ethereal user
           pass: process.env.SMTP_PASS, // generated ethereal password
         },
       });
       let html = `
         Salut, <br>
-        Ai o cerere noua de contact de pe <strong>arad-gardens.ro.ro</strong>: <br> <br>
+        Ai o cerere noua de contact de pe <strong>arad-gardens.ro</strong>: <br> <br>
         <strong>Tip Contact:</strong> ${
           args.tip == 'companie' ? 'Companie' : 'Persoana'
         } <br>
