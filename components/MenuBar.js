@@ -1,9 +1,14 @@
-import { useModalState } from 'state/contactModal';
-import Image from 'next/image';
 import Link from '@/components/Link';
-import { Menu } from './Menu';
+
+import { useModalState } from 'state/contactModal';
+
+import Image from 'next/image';
+
 import tw from 'twin.macro';
+
 import styled from 'styled-components';
+
+import { Menu } from './Menu';
 
 const LogoA = styled.a`
   & > div,
@@ -47,6 +52,11 @@ export const Menubar = () => {
             <li>
               <Link href="/servicii">
                 <a>Servicii</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/galerie-foto">
+                <a>Galerie Foto</a>
               </Link>
             </li>
             <li>
