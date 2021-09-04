@@ -19,7 +19,7 @@ const typeDefs = gql`
   }
 `;
 
-const smtp_host = 'hosting2157534.online.pro';
+const smtp_host = 'hosting2171794.online.pro';
 const smtp_port = 465;
 
 const resolvers = {
